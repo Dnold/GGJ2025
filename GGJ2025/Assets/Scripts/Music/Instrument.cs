@@ -1,16 +1,10 @@
 using System;
 using UnityEngine;
-
-public class Instrument
+[System.Serializable]
+public class Instrument : MonoBehaviour
 {
-    public Instrument(int id, string name, AudioClip loop)
-    {
-        this.id = id;
-        this.name = name;
-        this.loop = loop;
-    }
-
     public int id;
-    public string name;
+    public string instrumentName;
+    public AudioSource source;
     public AudioClip loop;
 }

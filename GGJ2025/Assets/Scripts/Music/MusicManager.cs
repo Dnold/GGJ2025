@@ -1,7 +1,9 @@
 using UnityEngine;
 using System.Linq;
+using Unity.VisualScripting;
 public class MusicManager : MonoBehaviour
 {
+    public Instrument[] instruments;
     public static MusicManager instance;
     public void Awake()
     {
@@ -15,9 +17,13 @@ public class MusicManager : MonoBehaviour
         }
         DontDestroyOnLoad(gameObject);
     }
-
-    Instrument[] instruments;
     
+  
+    
+    public void SetInstrumentVolume(Instrument instrument, float volume)
+    {
+        instruments.FirstOrDefault(e => e.id == instrument.id).source.volume = volume;
+    }
 
   
 
