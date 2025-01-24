@@ -1,6 +1,8 @@
+using Microsoft.Unity.VisualStudio.Editor;
 using Posts;
 using TMPro;
 using UnityEngine;
+using Image = UnityEngine.UIElements.Image;
 
 public class BasePost : MonoBehaviour
 {
@@ -8,9 +10,9 @@ public class BasePost : MonoBehaviour
     public string userName;
     public string userNickname;
     public Content content;
-    public Sprite icon;
+    public Texture icon;
     public TextMeshPro names;
     public TextMeshPro contentText;
-    public SpriteRenderer contentImage;
-    public SpriteRenderer userIcon;
+    public Image contentImage;
+    public Image userIcon;
 }

@@ -11,15 +11,15 @@ public class PostBehaviour : BasePost
 
     private void Start() {
         names.text = userNickname + " @" + userName;
-        userIcon.sprite = icon;
+        userIcon.image = icon;
         switch (type)
         {
             case Content.ContentType.TextPost:
                 contentText.text = content.contentText;
-                contentImage.enabled = false;
+                contentImage.SetEnabled(false);
                 break;
             case Content.ContentType.ImagePost:
-                contentImage.sprite = content.contentImage;
+                contentImage.image = content.contentImage;
                 contentText.enabled = false;
                 break;
             default:
