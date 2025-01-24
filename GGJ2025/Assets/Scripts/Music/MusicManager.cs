@@ -10,11 +10,16 @@ public struct Stage
 }
 public class MusicManager : MonoBehaviour
 {
+    public int currentStageID;
 
+    public void Start()
+    {
+        SetStage(currentStageID);
+    }
 
-    public static Stage[] stages;
+    public Stage[] stages;
     public Instrument[] instruments;
-    public MusicManager instance;
+    public static MusicManager instance;
     public void Awake()
     {
         if (instance == null)
