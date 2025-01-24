@@ -44,7 +44,7 @@ public class MusicManager : MonoBehaviour
         Stage currentStage = stages.FirstOrDefault(s => s.id == id);
         for(int i = 0; i < instruments.Length; i++)
         {
-            if (instruments.FirstOrDefault(e => e.id == currentStage.id))
+            if (currentStage.instruments.FirstOrDefault(e=> e.id == instruments[i].id))
             {
                 SetInstrumentVolume(instruments[i], 1f);
             }
