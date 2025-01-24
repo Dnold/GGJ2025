@@ -16,7 +16,25 @@ public class MusicManager : MonoBehaviour
     {
         SetStage(currentStageID);
     }
-
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            SetStage(1);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            SetStage(2);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            SetStage(3);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            SetStage(4);
+        }
+    }
     public Stage[] stages;
     public Instrument[] instruments;
     public static MusicManager instance;
