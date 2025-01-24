@@ -45,12 +45,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52ee646233fedd440bbec6d5dcadbaf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 0
   userName: User
   userNickname: Username
+  content:
+    contentText: 
+    contentImage: {fileID: 0}
   icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   names: {fileID: 7403471239106783403}
-  contentText: {fileID: 0}
-  contentImage: {fileID: 8478648499354269569}
+  contentText: {fileID: 6933137507373505538}
+  contentImage: {fileID: 1096145233172586894}
   userIcon: {fileID: 8478648499354269569}
   comments: []
 --- !u!1 &835830937027180887
