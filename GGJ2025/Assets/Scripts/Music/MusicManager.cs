@@ -12,8 +12,8 @@ public class MusicManager : MonoBehaviour
 {
 
 
-    public Stage[] stages;
-    public Instrument[] instruments;
+    public static Stage[] stages;
+    public static Instrument[] instruments;
     public static MusicManager instance;
     public void Awake()
     {
@@ -30,16 +30,23 @@ public class MusicManager : MonoBehaviour
     
     
     
-    public void SetInstrumentVolume(Instrument instrument, float volume)
+    public static void SetInstrumentVolume(Instrument instrument, float volume)
     {
        MusicUtils.GetInstrumentByID(instruments,instrument.id).source.volume = volume;
     }
-    public void SetStage(int id)
+    public static void SetStage(int id)
     {
         Stage currentStage = stages.FirstOrDefault(s => s.id == id);
-        for(int i = 0; i < currentStage.instruments.Length; i++)
+        for(int i = 0; i < instruments.Length; i++)
         {
-            SetInstrumentVolume(currentStage.instruments[i], 1);
+            if (instruments.FirstOrDefault(e => e.id == currentStage.id))
+            {
+                SetInstrumentVolume(instruments[i], 1f);
+            }
+            else
+            {
+                SetInstrumentVolume(instruments[i], 0f);
+            }
         }
     }
 
