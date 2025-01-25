@@ -367,6 +367,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -2297,7 +2310,94 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      text_namen_0: -3238579085084940112
+      text_namen_1: 8856134784966537776
+      text_namen_10: 5883852087580187272
+      text_namen_11: 855777346325392399
+      text_namen_12: -3823754922003580858
+      text_namen_13: -8271857744838750137
+      text_namen_14: 8178754632061410896
+      text_namen_15: -2959274531987247358
+      text_namen_16: 6694285571864165913
+      text_namen_17: -1796668002310895670
+      text_namen_18: 9068170957949404988
+      text_namen_19: 7515093731125006908
+      text_namen_2: 2552097616172389337
+      text_namen_20: 3226353937933713295
+      text_namen_21: 5947565652999959589
+      text_namen_22: 4001462005372768936
+      text_namen_23: 1925373087227585105
+      text_namen_24: 7013191199227898199
+      text_namen_25: -4243163722674882888
+      text_namen_26: 8726550639452891224
+      text_namen_27: -5238468970038443020
+      text_namen_28: -5885322486709395008
+      text_namen_29: -799537858161691116
+      text_namen_3: -5135586954704209463
+      text_namen_30: -1404964454007233359
+      text_namen_31: -2966643145464891751
+      text_namen_32: 6762294490899744491
+      text_namen_33: 8654062537838639189
+      text_namen_34: 4154886639547650831
+      text_namen_35: 1821515856582248604
+      text_namen_36: -1753312395218319343
+      text_namen_37: -2561062555081520031
+      text_namen_38: -3534861229489345825
+      text_namen_39: -4167916313589326993
+      text_namen_4: 3089866261152219354
+      text_namen_40: 5832265309047220698
+      text_namen_41: -4975983057589867450
+      text_namen_42: -2761389801859682593
+      text_namen_43: 3823198253722732683
+      text_namen_44: 2523334698052355708
+      text_namen_45: -400934243341789043
+      text_namen_46: 6233160284283118469
+      text_namen_47: 8252975943947944692
+      text_namen_48: 1242185635754137396
+      text_namen_49: 4735793687550283074
+      text_namen_5: -8094415614769456007
+      text_namen_50: -3354026956100199625
+      text_namen_51: -8602374135264127490
+      text_namen_52: -1526550673919969603
+      text_namen_53: -549578045776320333
+      text_namen_54: 841630980901638143
+      text_namen_55: -7428427517722016781
+      text_namen_56: 3469764022823084889
+      text_namen_57: 1172858692810286904
+      text_namen_58: 2206984140871191691
+      text_namen_59: 4211706786905269619
+      text_namen_6: -1202710355562928542
+      text_namen_60: -3574095980075066896
+      text_namen_61: -8387540780077480605
+      text_namen_62: -8210891493445520456
+      text_namen_63: 3375358132290430775
+      text_namen_64: 8411130570383760156
+      text_namen_65: -5216946441513691484
+      text_namen_66: 4271304805222857922
+      text_namen_67: 5302575092679531193
+      text_namen_68: -3922594388208488267
+      text_namen_69: 155254234145801343
+      text_namen_7: 9196980271818578572
+      text_namen_70: 204206853875442230
+      text_namen_71: -576543349655830693
+      text_namen_72: 7166034022731023797
+      text_namen_73: -4170388780373451238
+      text_namen_74: 3470673895243414486
+      text_namen_75: -7089939394690869813
+      text_namen_76: 2254717324263388907
+      text_namen_77: -5493494311130915270
+      text_namen_78: 7963470626275426460
+      text_namen_79: 1490775598991860740
+      text_namen_8: -1628104040597984374
+      text_namen_80: 8886011483741806696
+      text_namen_81: -6452797407094091096
+      text_namen_82: -5317898650018906502
+      text_namen_83: -3675109401258098082
+      text_namen_84: 6727258064046606667
+      text_namen_85: -6160774349265979524
+      text_namen_86: -161427767403908337
+      text_namen_9: 2355894745323333846
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

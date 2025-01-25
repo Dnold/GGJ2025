@@ -163,6 +163,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -597,7 +610,26 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      text_teamname_0: 2585487884838011823
+      text_teamname_1: -8932234997126813764
+      text_teamname_10: -7823559952882299897
+      text_teamname_11: -7810388434224900025
+      text_teamname_12: 1301893759781998126
+      text_teamname_13: -2306529459070169975
+      text_teamname_14: 2396825161137750791
+      text_teamname_15: -4213449154924405163
+      text_teamname_16: -4743855397654992002
+      text_teamname_17: -872639635416400849
+      text_teamname_18: 5116435217544516366
+      text_teamname_2: 4352720608874977773
+      text_teamname_3: -4725808545577723714
+      text_teamname_4: -1451014642982530705
+      text_teamname_5: 1684713481788099314
+      text_teamname_6: 2409244773512492482
+      text_teamname_7: 1627237550129744585
+      text_teamname_8: 4029836204629940320
+      text_teamname_9: -7231192118089500650
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
