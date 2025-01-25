@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3d3f4e81b98a3b04091847b24519ea3f
+guid: 3829938e8cdc13a4990241a6069949cb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8188370861741912753
-    second: hausmeister_1_0
+      213: 6512853182199159122
+    second: icon_31_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hausmeister_1_0
+      name: icon_31_0
       rect:
         serializedVersion: 2
-        x: 45
-        y: 8
-        width: 159
-        height: 190
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1b239473aefe2a170800000000000000
-      internalID: 8188370861741912753
+      spriteID: 259d04f667d426a50800000000000000
+      internalID: 6512853182199159122
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      hausmeister_1_0: 8188370861741912753
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
