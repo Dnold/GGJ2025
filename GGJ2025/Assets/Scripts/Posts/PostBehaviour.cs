@@ -13,6 +13,9 @@ public class PostBehaviour : BasePost
     {
         names.text = userNickname + " @" + userName;
         userIcon.sprite = icon;
+        if (verified){
+            
+        }
         switch (type)
         {
             case Content.ContentType.TextPost:

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class BasePost : MonoBehaviour
 {
+    public bool verified;
     public Content.ContentType type;
     public string userName;
     public string userNickname;
