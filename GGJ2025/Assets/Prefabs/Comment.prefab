@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 581384841856941431}
   m_Layer: 0
   m_Name: Comment
-  m_TagString: Untagged
+  m_TagString: Tag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61,6 +61,8 @@ MonoBehaviour:
   contentText: {fileID: 4183252079013156985}
   contentImage: {fileID: 6998823422092935510}
   userIcon: {fileID: 5540341550070054158}
+  isFound: 0
+  flag: 4
 --- !u!1 &1166916017671663852
 GameObject:
   m_ObjectHideFlags: 0
@@ -95,8 +97,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 30.941, y: -21.6}
-  m_SizeDelta: {x: 49.86457, y: 49.86457}
+  m_AnchoredPosition: {x: 32.79714, y: -18.131435}
+  m_SizeDelta: {x: 580.619, y: 109.47234}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1647659943851516108
 CanvasRenderer:
@@ -126,9 +128,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -245,8 +247,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 32.82, y: -11.27}
-  m_SizeDelta: {x: 578.2367, y: 87.87962}
+  m_AnchoredPosition: {x: 32.82, y: -9.391949}
+  m_SizeDelta: {x: 578.2367, y: 50.31859}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7695379503239318992
 CanvasRenderer:
@@ -381,8 +383,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.06, y: 8.4639}
-  m_SizeDelta: {x: 358.96393, y: 34.17543}
+  m_AnchoredPosition: {x: 2.05874, y: 8.463861}
+  m_SizeDelta: {x: 507.2386, y: 34.17543}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &224436005252620147
 CanvasRenderer:
@@ -477,7 +479,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 4.0365605, w: 3.6205292}
+  m_margin: {x: 0, y: 0, z: 0.7993851, w: 3.6205292}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -496,7 +498,7 @@ GameObject:
   - component: {fileID: 4830988855448336760}
   m_Layer: 0
   m_Name: Visuals
-  m_TagString: Untagged
+  m_TagString: Tag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -16,4 +16,5 @@ public class BasePost : MonoBehaviour
     public TMP_Text contentText;
     public UnityEngine.UI.Image contentImage;
     public UnityEngine.UI.Image userIcon;
+    public bool isFound = true;
 }

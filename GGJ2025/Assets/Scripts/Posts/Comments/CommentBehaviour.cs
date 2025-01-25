@@ -4,7 +4,7 @@ public enum flag { FakeNews, SexBot, HateSpeech, Spam, Scam, Child }
 public class CommentBehaviour : BasePost
 {
     
-    
+    public flag flag;
     private void Start() {
         names.text = userNickname + " @" + userName;
         userIcon.sprite = icon;
