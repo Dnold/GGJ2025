@@ -23,6 +23,15 @@ public class CommentBehaviour : BasePost
             default:
                 break;
         }
+
+        if (flag == flag.Nothing)
+        {
+            isFound = true;
+        }
+        else
+        {
+            isFound = false;
+        }
         FillAttributes();
     }
   
