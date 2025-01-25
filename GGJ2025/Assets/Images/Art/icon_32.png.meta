@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a78b5bbc3ebf9d1448fb5d496b37a30f
+guid: 8f803bf09abce4044b3fee91ce552d17
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7829175785103285625
-    second: icon_27_0
+      213: 3858813573010587845
+    second: icon_32_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,11 +96,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: icon_27_0
+      name: icon_32_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 97ddb2355e1d6ac60800000000000000
-      internalID: 7829175785103285625
+      spriteID: 5c080c1ff724d8530800000000000000
+      internalID: 3858813573010587845
       vertices: []
       indices: 
       edges: []

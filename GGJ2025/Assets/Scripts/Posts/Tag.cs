@@ -63,6 +63,7 @@ public class Tag : MonoBehaviour
                 {
                     result.gameObject.GetComponentInParent<CommentBehaviour>().isFound = true;
                     FindAnyObjectByType<PostBehaviour>().commentFound.Invoke();
+                    JanitorSpawner.spawnJanitor(result.gameObject.transform.position.y);
                     Destroy(result.gameObject);
                 }
             }
