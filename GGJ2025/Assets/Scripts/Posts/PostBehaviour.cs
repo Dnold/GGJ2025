@@ -5,7 +5,8 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UIElements;
-
+using System.Linq;
+using System.Collections.Generic;
 public class PostBehaviour : BasePost
 {
     public GameObject[] comments;
@@ -43,16 +44,22 @@ public class PostBehaviour : BasePost
 
     public void OnCommentFound()
     {
-        for (int i = 0; i < comments.Length; i++)
+        //for (int i = 0; i < comments.Length; i++)
+        //{
+        //    if (comments[i].GetComponent<CommentBehaviour>().isFound && i == comments.Length - 1)
+        //    {
+        //        GameManager.instance.levelManager.postCompleted.Invoke();
+        //    }
+        //    else
+        //    {
+        //        return;
+        //    }
+        //}
+        int count = comments.Count(c => c.GetComponent<CommentBehaviour>().isFound && c.GetComponent<CommentBehaviour>().flag != flag.Nothing);
+        int countValid = comments.Count(c => c.GetComponent<CommentBehaviour>().flag != flag.Nothing);
+        if(count == countValid)
         {
-            if (comments[i].GetComponent<CommentBehaviour>().isFound && i == comments.Length - 1)
-            {
-                GameManager.instance.levelManager.postCompleted.Invoke();
-            }
-            else
-            {
-                return;
-            }
+            GameManager.instance.levelManager.postCompleted.Invoke();
         }
     }
 }
