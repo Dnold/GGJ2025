@@ -5,14 +5,14 @@ using UnityEngine.SceneManagement;
 
 namespace ScriptableObjects
 {
-    [CreateAssetMenu(fileName = "SceneManager", menuName = "Scriptable Objects/SceneManager")]
+    [CreateAssetMenu(fileName = "LevelManager", menuName = "Scriptable Objects/LevelManager")]
     public class LevelManager : ScriptableObject
     {
         public int currentLevel;
         public int completedPosts;
         public Scene[] posts;
 
-        public UnityEvent postCompleted;
+        public UnityEvent postCompleted = new UnityEvent();
         
         public void nextPost()
         {
