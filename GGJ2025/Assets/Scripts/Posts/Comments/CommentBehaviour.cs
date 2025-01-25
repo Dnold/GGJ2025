@@ -8,6 +8,7 @@ public class CommentBehaviour : BasePost
     public flag flag;
     private void Start()
     {
+        verificationBadge.enabled = verified;
         names.text = userNickname + " @" + userName;
         userIcon.sprite = icon;
         switch (type)

@@ -186,6 +186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verified: 0
+  verificationBadge: {fileID: 1663400388516019833}
   type: 1
   userName: DerpyLul
   userNickname: DurpyLurpy
