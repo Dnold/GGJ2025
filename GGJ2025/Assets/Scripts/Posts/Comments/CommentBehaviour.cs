@@ -7,16 +7,15 @@ public class CommentBehaviour : BasePost
     
     private void Start() {
         names.text = userNickname + " @" + userName;
-        userIcon.image = icon;
+        userIcon.sprite = icon;
         switch (type)
         {
             case Content.ContentType.TextPost:
                 contentText.text = content.contentText;
-                contentImage.SetEnabled(false);
+                contentImage.enabled = false;
                 break;
             case Content.ContentType.ImagePost:
-                contentImage.image = content.contentImage;
-                contentText.enabled = false;
+                contentImage.sprite = content.contentImage;
                 break;
             default:
                 break;
