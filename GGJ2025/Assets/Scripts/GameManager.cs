@@ -28,10 +28,12 @@ public class GameManager : MonoBehaviour
     {
         if (levelManager.posts == null)
         {
+            int rand = 0;
             List<int> possible = Enumerable.Range(0, 5).ToList();
             for (int i = 0; i < 3; i++)
             {
-                levelManager.posts[i] = SceneManager.GetSceneByName("Level " + levelManager.currentLevel + "/Tweet" + possible[i]);
+                rand = UnityEngine.Random.Range(0, 5);
+                levelManager.posts[i] = SceneManager.GetSceneByName("Level " + levelManager.currentLevel + "/Tweet" + possible[rand]);
                 possible.RemoveAt(i);
             } 
         }
