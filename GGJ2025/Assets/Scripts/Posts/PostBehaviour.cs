@@ -13,9 +13,7 @@ public class PostBehaviour : BasePost
     {
         names.text = userNickname + " @" + userName;
         userIcon.sprite = icon;
-        if (verified){
-            
-        }
+        verificationBadge.enabled = verified;
         switch (type)
         {
             case Content.ContentType.TextPost:
@@ -30,5 +28,14 @@ public class PostBehaviour : BasePost
             default:
                 break;
         }
+        FillAttributes();
+    }
+    public void FillAttributes()
+    {
+        likeNumText.text = UnityEngine.Random.Range(0, 5000).ToString();
+        commentNumText.text = comments.Length.ToString();
+        bookmarkNumText.text = UnityEngine.Random.Range(0, 5000).ToString();
+        shareNumText.text = UnityEngine.Random.Range(0, 5000).ToString();
     }
 }
+

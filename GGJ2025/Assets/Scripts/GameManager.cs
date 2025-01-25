@@ -1,7 +1,15 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Cryptography;
+using ScriptableObjects;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using Random = System.Random;
 
 public class GameManager : MonoBehaviour
 {
+    public LevelManager levelManager;
     public static GameManager instance;
     public void Awake()
     {
@@ -15,10 +23,18 @@ public class GameManager : MonoBehaviour
         }
         DontDestroyOnLoad(gameObject);
     }
-    public Test Dragon;
 
     public void Start()
     {
-       Dragon.objectName = "Dragon";
+        if (levelManager.posts == null)
+        {
+            List<int> possible = Enumerable.Range(0, 5).ToList();
+            for (int i = 0; i < 3; i++)
+            {
+                levelManager.posts[i] = SceneManager.GetSceneByName("Level " + levelManager.currentLevel + "/Tweet" + possible[i]);
+                possible.RemoveAt(i);
+            } 
+        }
+        levelManager.postCompleted.AddListener(levelManager.nextPost);
     }
 }

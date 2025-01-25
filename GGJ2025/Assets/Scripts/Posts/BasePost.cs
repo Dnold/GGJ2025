@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class BasePost : MonoBehaviour
 {
     public bool verified;
+    public UnityEngine.UI.Image verificationBadge;
     public Content.ContentType type;
     public string userName;
     public string userNickname;
@@ -17,4 +18,8 @@ public class BasePost : MonoBehaviour
     public UnityEngine.UI.Image contentImage;
     public UnityEngine.UI.Image userIcon;
     public bool isFound = true;
+    public TMP_Text commentNumText;
+    public TMP_Text shareNumText;
+    public TMP_Text likeNumText;
+    public TMP_Text bookmarkNumText;
 }
