@@ -62,7 +62,7 @@ public class Tag : MonoBehaviour
                 if (comment.flag == flag)
                 {
                     result.gameObject.GetComponentInParent<CommentBehaviour>().isFound = true;
-                    
+                    FindAnyObjectByType<PostBehaviour>().commentFound.Invoke();
                     Destroy(result.gameObject);
                 }
             }

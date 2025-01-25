@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f57d99a767791843be5852a00966fe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  verified: 0
+  verified: 1
   verificationBadge: {fileID: 7405804153605053799}
   type: 0
   userName: DaveAndRex
@@ -58,7 +58,7 @@ MonoBehaviour:
     contentText: "My dog barked at the eclipse like it was a squirrel \U0001F602.
       Who else\u2019s pets got confused?"
     contentImage: {fileID: 8218771907821357143, guid: 696f78215d26435408740936d09c641b, type: 3}
-  icon: {fileID: 1674804629613845060, guid: 0b75ec6c0ad65cb4d8799a453a475b72, type: 3}
+  icon: {fileID: -5761772475511239868, guid: baf6a64ba4c194e47b11777e01f227c3, type: 3}
   names: {fileID: 9102859825178736853}
   contentText: {fileID: 4183252079013156985}
   contentImage: {fileID: 6998823422092935510}
@@ -178,7 +178,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -27.16, y: -8.213}
+  m_AnchoredPosition: {x: -25.26, y: -8.213}
   m_SizeDelta: {x: 5.87382, y: 7.24321}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6799971602478797332
@@ -314,7 +314,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -34.810646, y: 6.994061}
+  m_AnchoredPosition: {x: -32.084, y: 5.6584}
   m_SizeDelta: {x: 40.34587, y: 36.01997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6410270998865700333
@@ -661,7 +661,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 30.15, y: -8.213}
+  m_AnchoredPosition: {x: 27.86, y: -8.213}
   m_SizeDelta: {x: 5.87382, y: 7.24321}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8992062464125977563
@@ -797,7 +797,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 11.34, y: -8.73}
+  m_AnchoredPosition: {x: 10.41, y: -8.73}
   m_SizeDelta: {x: 5.87382, y: 7.24321}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1909911459047937915
@@ -1079,8 +1079,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -55.7, y: -0.9419}
-  m_SizeDelta: {x: 78.2, y: 26.1684}
+  m_AnchoredPosition: {x: -1.1475, y: -0.9419}
+  m_SizeDelta: {x: 72.1386, y: 26.1684}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9147161902333138130
 CanvasRenderer:
