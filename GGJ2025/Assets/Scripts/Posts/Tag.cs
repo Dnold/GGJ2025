@@ -61,6 +61,8 @@ public class Tag : MonoBehaviour
                 CommentBehaviour comment = result.gameObject.GetComponentInParent<CommentBehaviour>();
                 if (comment.flag == flag)
                 {
+                    result.gameObject.GetComponentInParent<CommentBehaviour>().isFound = true;
+                    
                     Destroy(result.gameObject);
                 }
             }

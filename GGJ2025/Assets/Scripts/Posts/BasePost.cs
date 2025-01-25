@@ -17,7 +17,7 @@ public class BasePost : MonoBehaviour
     public TMP_Text contentText;
     public UnityEngine.UI.Image contentImage;
     public UnityEngine.UI.Image userIcon;
-    public bool isFound = true;
+    public bool isFound = false;
     public TMP_Text commentNumText;
     public TMP_Text shareNumText;
     public TMP_Text likeNumText;

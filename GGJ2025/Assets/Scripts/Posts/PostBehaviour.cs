@@ -2,12 +2,14 @@ using System;
 using Posts;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UIElements;
 
 public class PostBehaviour : BasePost
 {
     public GameObject[] comments;
+    public UnityEvent commentFound = new UnityEvent();
 
     private void Start()
     {
@@ -28,6 +30,7 @@ public class PostBehaviour : BasePost
             default:
                 break;
         }
+        commentFound.AddListener(OnCommentFound);
         FillAttributes();
     }
     public void FillAttributes()
@@ -36,6 +39,21 @@ public class PostBehaviour : BasePost
         commentNumText.text = comments.Length.ToString();
         bookmarkNumText.text = UnityEngine.Random.Range(0, 5000).ToString();
         shareNumText.text = UnityEngine.Random.Range(0, 5000).ToString();
+    }
+
+    public void OnCommentFound()
+    {
+        for (int i = 0; i < comments.Length; i++)
+        {
+            if (comments[i].GetComponent<CommentBehaviour>().isFound && i == comments.Length - 1)
+            {
+                GameManager.instance.levelManager.postCompleted.Invoke();
+            }
+            else
+            {
+                return;
+            }
+        }
     }
 }
 
