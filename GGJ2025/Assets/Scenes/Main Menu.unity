@@ -119,6 +119,51 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &246839560
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 246839562}
+  - component: {fileID: 246839561}
+  m_Layer: 0
+  m_Name: JanitorSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &246839561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246839560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79417e5458ba86e4fb9d40dd1040e694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  janitor: {fileID: 5424884150662694598, guid: 5bd6f17b3d8784745b78ca0917ca6f9a, type: 3}
+--- !u!4 &246839562
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246839560}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.8284585, y: -0.82280564, z: -0.077255145}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &920473643
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,6 +291,7 @@ MonoBehaviour:
   levels:
   - level: 0
     sceneList: 010000000200000003000000
+  postComplete: 0
 --- !u!4 &1549757789
 Transform:
   m_ObjectHideFlags: 0
@@ -267,3 +313,4 @@ SceneRoots:
   m_Roots:
   - {fileID: 920473646}
   - {fileID: 1549757789}
+  - {fileID: 246839562}
