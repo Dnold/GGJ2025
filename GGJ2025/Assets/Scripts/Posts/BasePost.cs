@@ -2,7 +2,7 @@ using Microsoft.Unity.VisualStudio.Editor;
 using Posts;
 using TMPro;
 using UnityEngine;
-using Image = UnityEngine.UIElements.Image;
+using UnityEngine.UI;
 
 public class BasePost : MonoBehaviour
 {
@@ -10,9 +10,9 @@ public class BasePost : MonoBehaviour
     public string userName;
     public string userNickname;
     public Content content;
-    public Texture icon;
-    public TextMeshPro names;
-    public TextMeshPro contentText;
-    public Image contentImage;
-    public Image userIcon;
+    public Sprite icon;
+    public TMP_Text names;
+    public TMP_Text contentText;
+    public UnityEngine.UI.Image contentImage;
+    public UnityEngine.UI.Image userIcon;
 }

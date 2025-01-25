@@ -8,7 +8,7 @@ namespace Posts
     public struct Content
     {
         public string contentText;
-        public Texture contentImage;
+        public Sprite contentImage;
 
         public enum ContentType
         {
