@@ -50,14 +50,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verified: 0
+  verificationBadge: {fileID: 7405804153605053799}
   type: 0
-  userName: rastatter_crackratte437
-  userNickname: RatOnCrack
+  userName: Games4Life
+  userNickname: GamerDan
   content:
-    contentText: droppe right outta middle scool you dont know me yeah im smoking
-      crak rn yeah you dont know me yeah
+    contentText: Idk, it's not that big of a deal. so what the sun moves behind the
+      moon. Imagine you go outside for such a bullshit
     contentImage: {fileID: -7110399707708155245, guid: 717be07d8a7fd8745bf941cff18dc888, type: 3}
-  icon: {fileID: 4242204521886179163, guid: 2fd7c7b4b295cdd46b3ae78da689c821, type: 3}
+  icon: {fileID: -25300781324611178, guid: 29c01559f61cdb44baab056ef206fb5d, type: 3}
   names: {fileID: 9102859825178736853}
   contentText: {fileID: 4183252079013156985}
   contentImage: {fileID: 6998823422092935510}
@@ -524,7 +525,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 20.76, y: -13.33}
+  m_AnchoredPosition: {x: 20.8, y: -12.601}
   m_SizeDelta: {x: 536.49646, y: 117.83965}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7695379503239318992
@@ -932,8 +933,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.592084, y: 8.463861}
-  m_SizeDelta: {x: 523.462, y: 34.17543}
+  m_AnchoredPosition: {x: -7.405052, y: 8.09552}
+  m_SizeDelta: {x: 530.1951, y: 41.54225}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &224436005252620147
 CanvasRenderer:
@@ -1078,8 +1079,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -55.7, y: 0.0000038133}
-  m_SizeDelta: {x: 61.0014, y: 25.98}
+  m_AnchoredPosition: {x: -55.7, y: -7.295}
+  m_SizeDelta: {x: 61.0014, y: 24.521}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9147161902333138130
 CanvasRenderer:
