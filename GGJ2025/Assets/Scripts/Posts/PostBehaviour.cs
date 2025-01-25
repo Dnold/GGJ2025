@@ -59,7 +59,7 @@ public class PostBehaviour : BasePost
         int countValid = comments.Count(c => c.GetComponent<CommentBehaviour>().flag != flag.Nothing);
         if(count == countValid)
         {
-            GameManager.instance.levelManager.postCompleted.Invoke();
+            GameManager.instance.postCompleted.Invoke();
         }
     }
 }
