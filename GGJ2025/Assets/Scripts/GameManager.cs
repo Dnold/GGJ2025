@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
-using ScriptableObjects;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
