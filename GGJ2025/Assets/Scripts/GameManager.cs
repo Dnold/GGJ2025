@@ -22,6 +22,10 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public Level[] levels = new Level[3];
     public bool postComplete = false;
+    public void StartGame()
+    {
+        StartCoroutine(GameLoop());
+    }
     public void Awake()
     {
         if (instance == null)
@@ -33,7 +37,6 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
         DontDestroyOnLoad(gameObject);
-        StartCoroutine(GameLoop());
         postCompleted.AddListener(OnPostFinished);
     }
     IEnumerator GameLoop()

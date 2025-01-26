@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 
 public class Tag : MonoBehaviour
 {
@@ -63,8 +64,8 @@ public class Tag : MonoBehaviour
                 {
                     result.gameObject.GetComponentInParent<CommentBehaviour>().isFound = true;
                     FindAnyObjectByType<PostBehaviour>().commentFound.Invoke();
-                    JanitorSpawner.spawnJanitor(result.gameObject.transform.position.y);
-                    Destroy(result.gameObject);
+                    JanitorSpawner.spawnJanitor(result.gameObject.GetComponentInParent<CommentBehaviour>());
+                    result.gameObject.SetActive(false);
                 }
             }
         }
