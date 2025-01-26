@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cybers_ad_icon_1_0: -3068408761351496785
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

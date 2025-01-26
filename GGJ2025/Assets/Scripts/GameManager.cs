@@ -31,6 +31,10 @@ public class GameManager : MonoBehaviour
     {
         StartCoroutine(GameLoop());
     }
+    public void EndGame()
+    {
+        Application.Quit();
+    }
 
     public void Awake()
     {
@@ -101,11 +105,11 @@ public class GameManager : MonoBehaviour
             yield return null;
         }
 
-        // Time is up, restart the level
-        RestartLevel();
+        SceneManager.LoadScene("Scenes/Loser");
+        // Reset the currentScenes list and reload the first scene of the current level
     }
 
-    private void RestartLevel()
+    public void RestartLevel()
     {
         // Reset the currentScenes list and reload the first scene of the current level
         roundEndedTime = true;
