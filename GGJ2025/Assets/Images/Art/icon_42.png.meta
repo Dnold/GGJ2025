@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b17ca96e217a234418501d03519ee492
+guid: 3c12f216d6f300343bd0f0a4da1b9b8c
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -97,7 +97,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
+    buildTarget: WindowsStoreApps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icon_42_0: -5210666953954367136
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

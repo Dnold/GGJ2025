@@ -18,19 +18,19 @@ public class MusicManager : MonoBehaviour
     }
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (GameManager.instance.currentTime < 9999.0f)
         {
             SetStage(1);
         }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (GameManager.instance.currentTime < 15.0f)
         {
             SetStage(2);
         }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
+        if (GameManager.instance.currentTime < 5.0f)
         {
             SetStage(3);
         }
-        if (Input.GetKeyDown(KeyCode.Alpha4))
+        if (GameManager.instance.currentTime < 3.0f)
         {
             SetStage(4);
         }
