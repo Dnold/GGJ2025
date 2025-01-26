@@ -20,8 +20,8 @@ public class JanitorSpawner : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public static void spawnJanitor(float y)
+    public static void spawnJanitor(CommentBehaviour janitorSpawnPoint)
     {
-        Instantiate(instance.janitor, new Vector3(-8, y, 0), instance.janitor.transform.rotation);
+        GameObject janitorRef = Instantiate(instance.janitor, janitorSpawnPoint.transform);
     }
 }
