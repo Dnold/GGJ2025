@@ -1743,6 +1743,8 @@ MonoBehaviour:
     sceneList: 010000000200000003000000
   - level: 1
     sceneList: 040000000500000006000000
+  - level: 1
+    sceneList: 040000000500000006000000
   postComplete: 0
   levelTime: 5
   currentTime: 0
