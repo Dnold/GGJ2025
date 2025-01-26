@@ -26,6 +26,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 2/Tweet3.unity
     guid: 04a8ec7f6e980f34985cffd92f1b1c40
+  - enabled: 1
+    path: Assets/Scenes/Level 3/Tweet1.unity
+    guid: e3fbf7ce498f98b4d838a850c34af908
+  - enabled: 1
+    path: Assets/Scenes/Level 3/Tweet2.unity
+    guid: 1ea7d7aec2abd844b93b6de4457e6db0
+  - enabled: 1
+    path: Assets/Scenes/Level 3/Tweet3.unity
+    guid: b897df14ff858fd40b7fcfd57da98332
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 3590b91b4603b465dbb4216d601bff33, type: 3}
   m_UseUCBPForAssetBundles: 0

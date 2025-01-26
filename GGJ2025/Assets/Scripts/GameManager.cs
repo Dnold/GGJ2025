@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public Level[] levels = new Level[3];
     public bool postComplete = false;
-    public float levelTime = 10f; // Zeit in Sekunden
+    public float levelTime = 15f; // Zeit in Sekunden
     public float currentTime;
     private int currentLevelIndex;
     private List<int> currentScenes;
@@ -30,6 +30,10 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         StartCoroutine(GameLoop());
+    }
+    public void EndGame()
+    {
+        Application.Quit();
     }
 
     public void Awake()
@@ -101,11 +105,11 @@ public class GameManager : MonoBehaviour
             yield return null;
         }
 
-        // Time is up, restart the level
-        RestartLevel();
+        SceneManager.LoadScene("Scenes/Loser");
+        // Reset the currentScenes list and reload the first scene of the current level
     }
 
-    private void RestartLevel()
+    public void RestartLevel()
     {
         // Reset the currentScenes list and reload the first scene of the current level
         roundEndedTime = true;
