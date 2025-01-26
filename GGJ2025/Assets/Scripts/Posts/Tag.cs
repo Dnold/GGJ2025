@@ -63,6 +63,7 @@ public class Tag : MonoBehaviour
                 if (comment.flag == flag)
                 {
                     result.gameObject.GetComponentInParent<CommentBehaviour>().isFound = true;
+                    GameManager.instance.IncreaseTime(5);
                     FindAnyObjectByType<PostBehaviour>().commentFound.Invoke();
                     JanitorSpawner.spawnJanitor(result.gameObject.GetComponentInParent<CommentBehaviour>());
                     result.gameObject.SetActive(false);
