@@ -14,7 +14,6 @@ public struct Level
     public int level;
     [SerializeField]
     public List<int> sceneList;
-
 }
 public class GameManager : MonoBehaviour
 {
@@ -22,10 +21,18 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public Level[] levels = new Level[3];
     public bool postComplete = false;
+    public float levelTime = 10f; // Zeit in Sekunden
+    public float currentTime;
+    private int currentLevelIndex;
+    private List<int> currentScenes;
+    private bool roundEndedTime = false;
+    private Coroutine timerCoroutine;
+
     public void StartGame()
     {
         StartCoroutine(GameLoop());
     }
+
     public void Awake()
     {
         if (instance == null)
@@ -39,30 +46,76 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         postCompleted.AddListener(OnPostFinished);
     }
+
     IEnumerator GameLoop()
     {
-       
-        int currentLevel = 0;
-       
+        currentLevelIndex = 0;
 
-        while (currentLevel < levels.Length)
+        while (currentLevelIndex < levels.Length)
         {
-            List<int> tempScenes = levels[currentLevel].sceneList;
-            int initalCount = tempScenes.Count;
-            while(tempScenes.Count >= initalCount - 3)
+            currentScenes = new List<int>(levels[currentLevelIndex].sceneList);
+            int initialCount = currentScenes.Count;
+            int countIndex = 0;
+            roundEndedTime = false;
+            while (currentScenes.Count > 0)
             {
-               int rand =  UnityEngine.Random.Range(0, tempScenes.Count);
-                SceneManager.LoadScene(tempScenes[rand]);
-                tempScenes.Remove(tempScenes[rand]);
-                yield return new WaitUntil(() => postComplete);
+                int rand = UnityEngine.Random.Range(0, currentScenes.Count);
+                SceneManager.LoadScene(currentScenes[rand]);
+                currentScenes.RemoveAt(rand);
+
+                // Start the timer for the level
+                if (timerCoroutine != null)
+                {
+                    StopCoroutine(timerCoroutine);
+                }
+                timerCoroutine = StartCoroutine(LevelTimer());
+               
+                yield return new WaitUntil(() => postComplete || roundEndedTime);
+                if (roundEndedTime)
+                {
+                    StopCoroutine(timerCoroutine);
+                    break;
+                }
                 postComplete = false;
-                
+                roundEndedTime = false;
             }
-            currentLevel++;
+            if (!roundEndedTime)
+            {
+                countIndex++;
+                currentLevelIndex++;
+                roundEndedTime = true;
+            }
         }
     }
+
     private void OnPostFinished()
     {
         postComplete = true;
+    }
+
+    private IEnumerator LevelTimer()
+    {
+        currentTime = levelTime;
+        while (currentTime > 0)
+        {
+            currentTime -= Time.deltaTime;
+            yield return null;
+        }
+
+        // Time is up, restart the level
+        RestartLevel();
+    }
+
+    private void RestartLevel()
+    {
+        // Reset the currentScenes list and reload the first scene of the current level
+        roundEndedTime = true;
+        currentScenes = new List<int>(levels[currentLevelIndex].sceneList);
+        
+    }
+
+    public void IncreaseTime(float amount)
+    {
+        currentTime += amount;
     }
 }
