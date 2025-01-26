@@ -18,6 +18,7 @@ public class CommentBehaviour : BasePost
                 contentImage.enabled = false;
                 break;
             case Content.ContentType.ImagePost:
+                contentText.text = content.contentText;
                 contentImage.sprite = content.contentImage;
                 break;
             default:
