@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public Level[] levels = new Level[3];
     public bool postComplete = false;
-    public float levelTime = 10f; // Zeit in Sekunden
+    public float levelTime = 15f; // Zeit in Sekunden
     public float currentTime;
     private int currentLevelIndex;
     private List<int> currentScenes;
