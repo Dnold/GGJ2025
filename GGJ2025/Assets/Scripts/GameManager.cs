@@ -89,6 +89,7 @@ public class GameManager : MonoBehaviour
                 roundEndedTime = true;
             }
         }
+        SceneManager.LoadScene(10);
     }
 
     private void OnPostFinished()
